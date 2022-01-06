@@ -23,11 +23,11 @@ OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISE
 #ifndef ROBOTICSGROUP_UPATRAS_GAZEBO_PLUGINS_MIMIC_JOINT_PLUGIN
 #define ROBOTICSGROUP_UPATRAS_GAZEBO_PLUGINS_MIMIC_JOINT_PLUGIN
 
-// ROS includes
-#include <ros/ros.h>
+// ROS2 includes
+#include <rclcpp/rclcpp.hpp>
 
 // ros_control
-#include <control_toolbox/pid.h>
+#include <control_toolbox/pid.hpp>
 
 // Gazebo includes
 #include <gazebo/common/Plugin.hh>
@@ -51,7 +51,7 @@ namespace gazebo {
         bool has_pid_;
 
         // PID controller if needed
-        control_toolbox::Pid pid_;
+        //control_toolbox::Pid pid_;
 
         // Pointers to the joints
         physics::JointPtr joint_, mimic_joint_;

@@ -32,18 +32,20 @@ OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISE
   <url type="repository">https://github.com/roboticsgroup/roboticsgroup_upatras_gazebo_plugins</url>
   <url type="bugtracker">https://github.com/roboticsgroup/roboticsgroup_upatras_gazebo_plugins/issues</url>
 
-  <buildtool_depend>catkin</buildtool_depend>
+  <buildtool_depend>ament_cmake</buildtool_depend>
+
   <build_depend>control_toolbox</build_depend>
   <build_depend>gazebo_ros</build_depend>
-  <build_depend>roscpp</build_depend>
   <build_export_depend>control_toolbox</build_export_depend>
   <build_export_depend>gazebo_ros</build_export_depend>
-  <build_export_depend>roscpp</build_export_depend>
   <exec_depend>control_toolbox</exec_depend>
-  <exec_depend>gazebo_ros</exec_depend>
-  <exec_depend>roscpp</exec_depend>
+
+  <test_depend>ament_lint_common</test_depend>
+  <test_depend>ament_lint_auto</test_depend>
+  <test_depend>ament_cmake_gtest</test_depend>
 
   <export>
+    <build_type>ament_cmake</build_type>
     <gazebo_ros plugin_path="${prefix}/lib" />
   </export>
 </package>
